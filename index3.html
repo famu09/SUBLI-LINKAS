@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito - Subli Linkas</title>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+<body>
+    <header>
+        <img src="img/Subl.jpg" alt="Subli Linkas" class="logo">
+        <h1>Mi Carrito</h1>
+        <img src="img/Carrito.png" alt="carrito de compras" class="carrito-c">
+    </header>
+
+    <main>
+        <section class="carrito">
+            <div class="producto">
+                <img src="img/Balones.png" alt="Producto 1" class="producto-img">
+                <div class="info-producto">
+                    <p>Nombre del producto</p>
+                    <p>$ Precio</p>
+                    <div class="cantidad">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </div>
+                    <button class="eliminar">Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Repetir para más productos -->
+        </section>
+
+        <aside class="resumen-compra">
+            <h3>Resumen de compra</h3>
+            <p>Productos: $XXXX</p>
+            <p>Envío: $XXXX</p>
+            <h2>Total: $XXXX</h2>
+            <button class="continuar-compra">Continuar compra</button>
+        </aside>
+    </main>
+</body>
+</html>

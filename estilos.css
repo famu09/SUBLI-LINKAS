@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(250, 13, 250); /* me permite darle color al fondo de la pagina */
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; /* me permite elegir el tipo de letra de la pagina */
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(156, 5, 156); 
+    display: flex; /* me permite una distribucion mas controlada de los elementos del encabezado */
+    justify-content: space-between; /* distribuye los elementos header de manera que el primer elemento (.logo) se alinee al principio y el último elemento (nav) al final, dejando espacio entre ellos */
+    align-items: center; /* me permite alinear verticalmente los elementos en el centro del header. */
+    padding: 10px 20px;
+    border-bottom: 2px solid white;
+}
+
+header .logo img {
+    height: 100px; /* largo */
+    width: 400px; /* ancho */
+    border-radius: 10px; /* bordes redondeados */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav input[type="text"] {
+    padding: 10px; /* me permite añadirle un relleno interno al campo  */
+    margin-bottom: 1px; /* son para espaciar el cuadro de los otros elementos */
+    margin-right: 20px;
+    border: 1px solid #080808;
+    border-radius: 10px;
+    width: 360px;
+}
+
+nav ul {
+    list-style: none; /* quita los puntos de la lista */
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+/* esto para que los elementos de la lista aparezcan en linea */
+    display: inline;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #620062; /* Fondo del botón */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border: 2px solid white; /* Borde del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición para el cambio de color de fondo */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    margin-right: 10px; /* Añadir un margen entre los botones */
+}
+
+nav ul li a:hover {
+    background-color: #870087; /* Color de fondo al pasar el puntero del mouse */ 
+}
+
+.categoria-de-ropa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.categoria-de-ropa h1 {
+    color: white;
+    font-size: 80px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.categoria-de-ropa h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    background-color:rgb(156, 5, 156); 
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    transition: background-color 0.3s; 
+    white-space: nowrap; 
+    margin-right: 1px; 
+}
+
+.productos-ropa {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.categoria img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.categoria p {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: #620062; 
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    white-space: nowrap; 
+    margin-right: 1px; 
+}
+
+.categoria p:hover  {
+    background-color: #870087;
+}
+
+
+.categoria-de-otros {
+    text-align: center;
+    margin: 0 0 60px; 
+}
+
+.categoria-de-otros h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(156, 5, 156);
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    white-space: nowrap; 
+    margin-right: 1px; 
+}
+
+.otros-productos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
